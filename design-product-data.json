@@ -1,0 +1,51 @@
+[    {
+        "key": 1,
+        "productname": "Full Sleeve T- Shirt",
+        "image": "images/Full Sleeve T-Shirt.jpeg"
+    },
+    {
+        "key": 2,
+        "productname": "Hoodie",
+        "image": "images/Hoodie.jpeg"
+    },
+    {
+        "key": 3,
+        "productname": "joggers",
+        "image": "noimagefound"
+    },
+    {
+        "key": 4,
+        "productname": "Oversized T- Shirt",
+        "image": "images/oversizedtishirt.jpeg"
+    },
+    {
+        "key": 5,
+        "productname": "Polo T-Shirt",
+        "image": "nofound"
+    },
+    {
+        "key": 6,
+        "productname": "Regular Fit T-Shirt",
+        "image": "images/Regular Fit T-shirt.jpeg"
+    },
+    {
+        "key": 7,
+        "productname": "Sweatshirt",
+        "image": "images/Sweatshirt.jpeg"
+    },
+    {
+        "key": 8,
+        "productname": "Totebag",
+        "image": "notfound"
+    },
+    {
+        "key": 9,
+        "productname": "Women's Crop Top",
+        "image": "images/womenscroptop.jpeg"
+    },
+    {
+        "key": 10,
+        "productname": "Women T-Shirt",
+        "image": "images/womenstshirt.jpeg"
+    }
+]

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="menuToggle active"></div>
+        <div class="sidebar active">
+            <ul>
+                <li class="logo" style="user-select: none; pointer-events: none;">
+                    <a href="#">
+                        <div class="icon"><ion-icon name="print"></ion-icon></div>
+                        <div class="text">
+                            Printovert
+                            <!-- #1 Comment the text : Uncomment the Image tag  -->
+                            <!-- <img src="" alt="" id="logo"> -->
+                        </div>
+                    </a>
+                </li>
+                <div class="Menulist">
+                    <li style="--bg: #0046ff" class="active" tabname="dashboard">
+                        <a href="#">
+                            <div class="icon">
+                                <i class='bx bxs-dashboard'></i>
+                            </div>
+                            <div class="text">Dashboard</div>
+                        </a>
+                    </li>
+                    <li style="--bg: #0046ff" tabname="createordertab">
+                        <a href="#">
+                            <div class="icon">
+                                <ion-icon name="color-wand-outline"></ion-icon>
+                            </div>
+                            <div class="text">Create Order</div>
+                        </a>
+                    </li>
+                    <li style="--bg: #0046ff" tabname="orderstab">
+                        <a href="#">
+                            <div class="icon"><ion-icon name="cart-outline"></ion-icon></div>
+                            <div class="text">Orders</div>
+                        </a>
+                    </li>
+                    <li style="--bg: #0046ff" tabname="">
+                        <a href="#">
+                            <div class="icon">
+                                <ion-icon name="images-outline"></ion-icon>
+                            </div>
+                            <div class="text">Design Library</div>
+                        </a>
+                    </li>
+                    <li style="--bg: #0046ff" tabname="">
+                        <a href="#">
+                            <div class="icon">
+                                <ion-icon name="wallet-outline"></ion-icon>
+                            </div>
+                            <div class="text">Wallet</div>
+                        </a>
+                    </li>
+                    <li style="--bg: #0046ff" tabname="">
+                        <a href="#">
+                            <div class="icon">
+                                <ion-icon name="ticket-outline"></ion-icon>
+                            </div>
+                            <div class="text">Ticket</div>
+                        </a>
+                    </li>
+                    <li style="--bg: #0046ff" tabname="">
+                        <a href="#">
+                            <div class="icon">
+                                <ion-icon name="create-outline"></ion-icon>
+                            </div>
+                            <div class="text">Edit Profile</div>
+                        </a>
+                    </li>
+                </div>
+                <div class="bottom">
+                    <li style="--bg: #333">
+                        <a href="#">
+                            <div class="icon">
+                                <div class="imgBx">
+                                    <img id="imgBx-Id"
+                                        src="https://s3-alpha-sig.figma.com/img/9728/5628/58f46aebd1b3e204546a1262a8f93cb3?Expires=1701648000&Signature=ErCShYiT7uLi3E0dhm1qg9z~HZU6T0gVakEtOgngoLJnxjOkUETxub2dP8scu0zNY~Sj~HX4QDE0AeDQzwpUak43tFbjFR~hxPaPkczRZK8sjG5-9JnavN~oEfEqxLcktdvFfKnS0yIlPQ9ovTDT-0p1gqDCBhHtrMO1X6MEWdKC8mNub2UyiQmf27VUSEvmU~jCAcUxgVAFkw~gcQi6uRUfy9zG2p7Wzg-PEZRSmavkWRNtbJxSQPcPO3~P9tCIJUMVyivK6dl30ueq-oE33ygH8GM7MimNtPLn3nalBr9DPU9anC5UxTgjvK~aHnfZj9vIo7OIqiS~vQSCy88Fsw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+                                        alt="">
+                                </div>
+                            </div>
+                            <div class="text">UserName</div>
+                        </a>
+                    </li>
+                    <li style="--bg: #ffa117">
+                        <a href="#">
+                            <div class="icon">
+                                <ion-icon name="log-out-outline"></ion-icon>
+                            </div>
+                            <div class="text">Logout</div>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="body-main">
+            <div class="dashboard cm-bodymain-hide hide">
+                <p class="tab-heading">Welcome Back , User</p>
+                <p class="tab-head--subtitle">Lets have a tour to the dashboard</p>
+                <div class="dashboard-grid-system-top-view--fs">
+                    <div class="dashboard-grid-fs--child">
+                        <p class="fs-dashboard--top-grid-title">Spent </p>
+                        <p class="fs-dashboard--top-grid-data">$3780</p>
+                    </div>
+                    <div class="dashboard-grid-fs--child">
+                        <p class="fs-dashboard--top-grid-title">Total Orders</p>
+                        <p class="fs-dashboard--top-grid-data">101</p>
+                    </div>
+                    <div class="dashboard-grid-fs--child">
+                        <p class="fs-dashboard--top-grid-title">Wallet Balance</p>
+                        <p class="fs-dashboard--top-grid-data">$200</p>
+                    </div>
+                    <div class="dashboard-grid-fs--child">
+                        <p class="fs-dashboard--top-grid-title">Active Orders</p>
+                        <p class="fs-dashboard--top-grid-data">20</p>
+                    </div>
+
+
+                </div>
+                <div class="total-row-dashboard-series--am">
+                    <div class="set1-total-row-dashboard-series--am">
+                        <div class="row--1--dasshboard row--dasshboard">
+                            <div class="wallet-div--dashboard--1 cm-div-dashboard-60-40-grid">
+                                <p class="texttop--div--1---a">
+                                    Wallet Balance
+                                </p>
+                                <p class="texttop--div--2---a">
+                                    $1,200
+                                </p>
+                                <div class="btn-div-aa-56442">
+                                    <button class="add-fund--dashboard--a cm-btn-60-40-2">View History</button>
+                                    <button class="add-fund--dashboard--a cm-btn-60-40">Add Amount</button>
+                                </div>
+
+                            </div>
+                            <div class="create-order--dashboard--1 cm-div-dashboard-60-40-grid">
+                                <div class="texttop--div--1---a">
+                                    Create a New Order
+                                </div>
+                                <button class="createorder-dashboard cm-btn-60-40">
+                                    Create Order
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row--2--dasshboard row--dasshboard">
+                            <div class="create-order--dashboard--1 cm-div-dashboard-60-40-grid">
+                                <div class="texttop--div--1---a">
+                                    Create a New Order
+                                </div>
+                                <img src="ks.jpg" alt="will load illustration at right bottom corner">
+                            </div>
+                            <div class="orders-div--dashboard--1 cm-div-dashboard-60-40-grid">
+                                <p class="texttop--div--1---a">
+                                    My Orders
+                                </p>
+                                <button class="view-orders--dashboard--a cm-btn-60-40"> View All Orders</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="set2-total-row-dashboard-series--am">
+                        <div class="icon-contact-headset">
+                            <i class='bx bx-support'></i>
+                        </div>
+                        <div class="texttop--div--1---ab">
+                            Contact Support
+                        </div>
+                        <button class="add-fund--dashboard--a cm-btn-60-40-2">View History</button>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="createordertab cm-bodymain-hide ">
+                <div class="container-createorselect-from-designs hide">
+                    <div class="createorder-newtab cm-fs12" onclick="colfs12_change(this)"
+                        tabnames="product-designer-container">
+                        <div class="icon-plus--forcreatedesign">
+                            <ion-icon name="add-outline" class="icon-plus--forcreatedesign-fs12"></ion-icon>
+                        </div>
+                        <div class="titlemenu--newtab--fs12">
+                            Create New
+                        </div>
+                    </div>
+                    <div class="selecttoorder-newtab cm-fs12" onclick="colfs12_change(this)"
+                        tabnames="product-libary-access-fs12">
+                        <div class="icon-plus--forcreatedesign">
+                            <i class='bx bx-select-multiple icon-plus--forcreatedesign-fs12'></i>
+                        </div>
+                        <div class="titlemenu--newtab--fs12">
+                            Product Library
+                        </div>
+                    </div>
+                </div>
+                <div class="product-designer-container fs12-createtabs-fs13">
+                    <div class="topbar-product-designer">
+                        <button class="backbutton"
+                            onclick="goBack('container-createorselect-from-designs' , 'product-designer-container')"
+                            lastDiv="container-createorselect-from-designs">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </button>
+                        <p class="tab-heading">Design Your Product</p>
+                    </div>
+                    <div class="divwrap-tocenter hide">
+                        <div class="divwrap-productselect-todesign">
+                            <p class="choosevariant-heading">Select the Varient</p>
+                        </div>
+                        <div class="productlist-toselect">
+
+                        </div>
+                    </div>
+                    <div class="product-designer">
+                        <div class="display-image">
+                            <div class="container-image-fs14">
+                                <img src="" alt="" class="image-fs14">
+                                <img src="" alt="" class="image-fs14">
+                                <img src="" alt="" class="image-fs14">
+                                <img src="" alt="" class="image-fs14">
+                            </div>
+                            <div class="selectside-2d">
+                                <button class="selectside-fs14">
+                                    Front
+                                </button>
+                                <button class="selectside-fs14">
+                                    Left
+                                </button>
+                                <button class="selectside-fs14">
+                                    Right
+                                </button>
+                                <button class="selectside-fs14">
+                                    Back
+                                </button>
+                            </div>
+                        </div>
+                        <div class="designer-info-tab">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="product-libary-access-fs12 fs12-createtabs-fs13 hide">biraryr</div>
+            </div>
+            <div class="orderstab cm-bodymain-hide"></div>
+        </div>
+
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="index.js"></script>
+    <script src="product-designer.js"></script>
+</body>
+
+
+</html>
