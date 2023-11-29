@@ -21,17 +21,22 @@ function libraryCreate() {
 
 function getImageUrl() {
     var input = document.getElementById('imageInput');
-
+    var titleHere;
     // Check if a file is selected
     if (input.files && input.files[0]) {
         var reader = new FileReader();
-
+        titleHere = prompt("Set a Image Title:");
         reader.onload = function (e) {
             // Add the new image to the libraryArr
-            libraryArr.push({
-                image: e.target.result,
-                title: "", // You can set a default title or leave it empty
-            });
+            if (titleHere !== null) {
+                libraryArr.push({
+                    image: e.target.result,
+                    title: titleHere, // You can set a default title or leave it empty
+                });
+            } else {
+                return alert('Please Try Again and Input the Title')
+            }
+
 
             // Update the library UI
             libraryCreate();
