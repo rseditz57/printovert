@@ -54,5 +54,7 @@ function goBack(classname, tohide) {
     if (userConfirmed) {
         document.querySelector(`.${classname}`).classList.remove('hide');
         document.querySelector(`.${tohide}`).classList.add('hide');
+        const hideContainer = document.querySelector('.divwrap-tocenter')
+        hideContainer.classList.remove('hide')
     }
 }

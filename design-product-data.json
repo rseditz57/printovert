@@ -1,51 +1,232 @@
-[    {
+[
+    {
         "key": 1,
         "productname": "Full Sleeve T- Shirt",
-        "image": "images/Full Sleeve T-Shirt.jpeg"
+        "image": "images/Full Sleeve T-Shirt.jpeg",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     },
     {
         "key": 2,
         "productname": "Hoodie",
-        "image": "images/Hoodie.jpeg"
+        "image": "images/Hoodie.jpeg",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     },
     {
         "key": 3,
         "productname": "joggers",
-        "image": "noimagefound"
+        "image": "noimagefound",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     },
     {
         "key": 4,
         "productname": "Oversized T- Shirt",
-        "image": "images/oversizedtishirt.jpeg"
+        "image": "images/oversizedtishirt.jpeg",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     },
     {
         "key": 5,
         "productname": "Polo T-Shirt",
-        "image": "nofound"
+        "image": "nofound",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     },
     {
         "key": 6,
         "productname": "Regular Fit T-Shirt",
-        "image": "images/Regular Fit T-shirt.jpeg"
+        "image": "images/Regular Fit T-shirt.jpeg",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     },
     {
         "key": 7,
         "productname": "Sweatshirt",
-        "image": "images/Sweatshirt.jpeg"
+        "image": "images/Sweatshirt.jpeg",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     },
     {
         "key": 8,
         "productname": "Totebag",
-        "image": "notfound"
+        "image": "notfound",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     },
     {
         "key": 9,
         "productname": "Women's Crop Top",
-        "image": "images/womenscroptop.jpeg"
+        "image": "images/womenscroptop.jpeg",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     },
     {
         "key": 10,
         "productname": "Women T-Shirt",
-        "image": "images/womenstshirt.jpeg"
+        "image": "images/womenstshirt.jpeg",
+        "color": [
+            "red",
+            "white"
+        ],
+        "size": [
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "designer-image": [
+            "",
+            "",
+            "",
+            ""
+        ],
+        "price": "100"
     }
 ]
