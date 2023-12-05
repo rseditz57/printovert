@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #0046ff;
+    --secondary-color: #E0F4FF;
+    --third-color: #fff;
+    --text-color: #222222;
+    --secondary-text-color: #6e6d7a;
+    --success-color: #4daa57;
+    --reject-color: #ff0000;
+    --third-text-color: #83A2FF
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: poppins; */
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+.wallettop {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.addbalance {
+    height: 30px;
+    padding: 0px 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+
+    color: var(--secondary-color);
+}
+
+.wallet-details {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    gap: 20px;
+}
+
+.wallet-child {
+    width: 33.33%;
+    border: 1.6px solid rgba(128, 128, 128, 0.648);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 15px 10px 15px;
+    background-color: #fff;
+}
+
+.wallet-child-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0px;
+}
+
+.first--walletchild {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.second-walletchild {
+    font-size: .7rem;
+    color: var(--secondary-text-color);
+    margin-top: -6px;
+}
+
+.walletbalance--f {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+

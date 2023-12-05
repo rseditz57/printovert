@@ -1,0 +1,211 @@
+:root {
+    --primary-color: #0046ff;
+    --secondary-color: #E0F4FF;
+    --third-color: #fff;
+    --text-color: #222222;
+    --secondary-text-color: #6e6d7a;
+    --success-color: #4daa57;
+    --reject-color: #ff0000;
+    --third-text-color: #83A2FF
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: poppins; */
+    font-family: 'Poppins', sans-serif;
+    user-select: none;
+}
+
+hr {
+    /* border-color: #fff !important; */
+    border: none;
+    background-color: #c2cfd6;
+    height: 1px;
+}
+
+.editprofile-divpart {
+    padding: 20px 10px;
+}
+
+.profilef--edit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 25px 0px;
+    justify-content: space-between;
+}
+
+.input-style-cs-ff-1 {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 1.5px solid rgba(128, 128, 128, 0.719);
+    width: 250px;
+    /* border: none; */
+    border-radius: 15px;
+    padding: 0px 0px 0px 10px;
+}
+
+.input-style-cs-ff-1:focus {
+    outline: 1px solid rgba(128, 128, 128, 0.919);
+}
+
+#label-id--style {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.profilef--edit-f--div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-container--f-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: end;
+}
+
+.input-style-cs-ff {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 510px;
+    border: 1.5px solid rgba(128, 128, 128, 0.719);
+    border-radius: 15px;
+    /* margin: 5px 0px; */
+    padding: 0px 0px 0px 10px;
+}
+
+.input-style-cs-ff:focus {
+    outline: 1px solid rgba(128, 128, 128, 0.919);
+}
+
+.addresses--edit {
+    margin: 25px 0px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.addressf--edit--f {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    font-weight: 600;
+}
+
+.addnew-address {
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    color: var(--secondary-color);
+    border: none;
+    padding: 5px 8px;
+}
+
+/* this part need to be changed for making the part in slider  */
+.addresses-container--edit-f {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: ; */
+    /* gap: 10px; */
+    height: 130px;
+    /* width: 220px; */
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+.title-receiver--edit-f {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.address-firstline,
+.pincode-city--edit-f {
+    display: flex;
+    letter-spacing: 1px;
+    font-size: .9rem;
+}
+
+.address-container:hover {
+    box-shadow: 7px 5px 0px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: -7px;
+    left: -5px;
+}
+
+.deleteaddress-thisone {
+    font-size: .6rem;
+    background-color: var(--reject-color);
+    color: var(--third-color);
+    border-radius: 15px;
+    padding: 2px 5px;
+    border: none;
+    margin-left: 10px;
+}
+
+.cm-submitor--editprofile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    font-weight: 500;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+.submitorcancel--edit-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+
+.cancel--submitor {
+    border: 1px solid var(--primary-color);
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.submit-submitor {
+    border: none;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.showpassword-style {
+    display: flex;
+    gap: 5px ;
+}

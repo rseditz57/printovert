@@ -1,0 +1,65 @@
+[
+    {
+        "receiver_name": "Ronit Sarkar",
+        "address_1line": "22/A Main Street",
+        "address_2line": "Additional Line",
+        "landmark": "near this",
+        "city": "Kolkata",
+        "pincode": "700090",
+        "additional_no": "1234567890"
+    },
+    {
+        "receiver_name": "Aisha Patel",
+        "address_1line": "45/B Elm Avenue",
+        "address_2line": "Apt 302",
+        "landmark": "Opposite Park",
+        "city": "Mumbai",
+        "pincode": "400072",
+        "additional_no": "9876543210"
+    },
+    {
+        "receiver_name": "Carlos Rodriguez",
+        "address_1line": "7 Pine Street",
+        "address_2line": "Floor 3",
+        "landmark": "Next to Library",
+        "city": "New York",
+        "pincode": "10001",
+        "additional_no": "5551234567"
+    },
+    {
+        "receiver_name": "Sophie Johnson",
+        "address_1line": "31 Maple Lane",
+        "address_2line": "Unit 15",
+        "landmark": "Close to School",
+        "city": "London",
+        "pincode": "SW1A 1AA",
+        "additional_no": "1237894560"
+    },
+    {
+        "receiver_name": "Ravi Kumar",
+        "address_1line": "14/C Oak Street",
+        "address_2line": "Flat 205",
+        "landmark": "Near Market",
+        "city": "Delhi",
+        "pincode": "110001",
+        "additional_no": "9998887770"
+    },
+    {
+        "receiver_name": "Elena Garcia",
+        "address_1line": "10 Palm Avenue",
+        "address_2line": "Suite 8",
+        "landmark": "Across from Cinema",
+        "city": "Barcelona",
+        "pincode": "08001",
+        "additional_no": "6543210987"
+    },
+    {
+        "receiver_name": "Hiroshi Tanaka",
+        "address_1line": "3 Sakura Lane",
+        "address_2line": "Apt 101",
+        "landmark": "Beside Temple",
+        "city": "Tokyo",
+        "pincode": "100-0001",
+        "additional_no": "9870123456"
+    }
+]

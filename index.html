@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="designer.css">
     <link rel="stylesheet" href="design-library.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="ticket.css">
+    <link rel="stylesheet" href="wallet.css">
     <title>Dashboard</title>
 </head>
 
@@ -39,12 +42,12 @@
                             <div class="text">Dashboard</div>
                         </a>
                     </li>
-                    <li style="--bg: #0046ff" tabname="createordertab">
+                    <li style="--bg: #0046ff" tabname="prouctdesignercreate">
                         <a href="#">
                             <div class="icon">
                                 <ion-icon name="color-wand-outline"></ion-icon>
                             </div>
-                            <div class="text">Create Order</div>
+                            <div class="text">Design Product</div>
                         </a>
                     </li>
                     <li style="--bg: #0046ff" tabname="design-library">
@@ -55,6 +58,14 @@
                             <div class="text">Design Library</div>
                         </a>
                     </li>
+                    <li style="--bg: #0046ff" tabname="createorder-new">
+                        <a href="#">
+                            <div class="icon">
+                                <ion-icon name="albums-outline"></ion-icon>
+                            </div>
+                            <div class="text">Create Order</div>
+                        </a>
+                    </li>
                     <li style="--bg: #0046ff" tabname="orderstab">
                         <a href="#">
                             <div class="icon"><ion-icon name="cart-outline"></ion-icon></div>
@@ -62,7 +73,7 @@
                         </a>
                     </li>
 
-                    <li style="--bg: #0046ff" tabname="">
+                    <li style="--bg: #0046ff" tabname="wallettab">
                         <a href="#">
                             <div class="icon">
                                 <ion-icon name="wallet-outline"></ion-icon>
@@ -70,7 +81,7 @@
                             <div class="text">Wallet</div>
                         </a>
                     </li>
-                    <li style="--bg: #0046ff" tabname="">
+                    <li style="--bg: #0046ff" tabname="tickettab">
                         <a href="#">
                             <div class="icon">
                                 <ion-icon name="ticket-outline"></ion-icon>
@@ -78,7 +89,7 @@
                             <div class="text">Ticket</div>
                         </a>
                     </li>
-                    <li style="--bg: #0046ff" tabname="">
+                    <li style="--bg: #0046ff" tabname="editprofiletab">
                         <a href="#">
                             <div class="icon">
                                 <ion-icon name="create-outline"></ion-icon>
@@ -97,7 +108,7 @@
                                         alt="">
                                 </div>
                             </div>
-                            <div class="text">UserName</div>
+                            <div class="text" id="username-text--menu">UserName</div>
                         </a>
                     </li>
                     <li style="--bg: #ffa117">
@@ -112,7 +123,7 @@
             </ul>
         </div>
         <div class="body-main">
-            <div class="dashboard cm-bodymain-hide ">
+            <div class="dashboard cm-bodymain-hide">
                 <p class="tab-heading">Welcome Back , User</p>
                 <p class="tab-head--subtitle">Lets have a tour to the dashboard</p>
                 <div class="dashboard-grid-system-top-view--fs">
@@ -189,7 +200,7 @@
                 </div>
 
             </div>
-            <div class="createordertab cm-bodymain-hide hide">
+            <div class="prouctdesignercreate cm-bodymain-hide hide">
                 <div class="container-createorselect-from-designs">
                     <div class="createorder-newtab cm-fs12" onclick="colfs12_change(this)"
                         tabnames="product-designer-container">
@@ -288,9 +299,14 @@
                                 <button class="plain-toggle"></button>
                                 <p class="plain-text">Plain</p>
                             </div>
-                            <button class="adddesign">
-                                Upload Design
-                            </button>
+                            <div class="design-area-imageupload">
+                                <button class="adddesign">
+                                    Upload Design
+                                </button>
+                                <button class="designlibrary-areaupload">
+                                    Design Library
+                                </button>
+                            </div>
                             <div class="pricing">
                                 <p class="totalprice--fs15-txt">
                                     Total Price:
@@ -348,6 +364,210 @@
             <div class="orderstab cm-bodymain-hide hide">
 
             </div>
+            <div class="createorder-new cm-bodymain-hide hide"></div>
+            <div class="wallettab cm-bodymain-hide hide">
+                <div class="wallettop">
+                    <div class="walettop-left">
+                        <p class="tab-heading">Personal Details</p>
+                        <p class="tab-head--subtitle">Don't forget to save your changes</p>
+                    </div>
+                    <button class="addbalance">
+                        Add Balance
+                    </button>
+                </div>
+                <div class="wallet-details">
+                    <div class="wallet-child">
+                        <div class="wallet-child-first">
+                            <div class="first--walletchild">
+                                Balance
+                            </div>
+                            <div class="second-walletchild">
+                                Total Wallet Balance Available:
+                            </div>
+                        </div>
+                        <div class="walletbalance--f">
+                            $20,000
+                        </div>
+                    </div>
+                    <div class="wallet-child">
+                        <div class="wallet-child-first">
+                            <div class="first--walletchild">
+                                Spent
+                            </div>
+                            <div class="second-walletchild">
+                                Total Spent Amount Available:
+                            </div>
+                        </div>
+                        <div class="walletbalance--f">
+                            $2,000
+                        </div>
+                    </div>
+                    <div class="wallet-child">
+                        <div class="wallet-child-first">
+                            <div class="first--walletchild">
+                                COD Remenance
+                            </div>
+                            <div class="second-walletchild">
+                                Total Wallet Balance Available:
+                            </div>
+                        </div>
+                        <div class="walletbalance--f">
+                            $9,502
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tickettab cm-bodymain-hide hide">
+                <div class="tickettop">
+                    <div class="tickettop-left">
+                        <p class="tab-heading" id="checkticket-to-raiseticket">Check Ticket</p>
+                        <p class="tab-head--subtitle">Raise and Check</p>
+                    </div>
+                    <button class="raiseticket" onclick="raiseToggle()">
+                        Raise a Ticket
+                    </button>
+                </div>
+                <div class="raiseaticket hide">
+                    <div class="top-lineflex-support">
+                        <label class="subject--stp label--tls">
+                            <span id="common-padding-tls">Subject*</span>
+                            <input type="text" id="subject" required>
+                        </label>
+                        <label class="callback--stp label--tls">
+                            <span id="common-padding-tls"> CallBack Number*</span>
+                            <input type="text" id="callback" minlength="10" maxlength="10" pattern="^[0-9]+$" required>
+                        </label>
+                        <label for="" class="type--stp label--tls">
+                            <span id="common-padding-tls"> Query For*</span>
+                            <select name="" id="typequery" required>
+                                <option value="payment-related">Payment Related</option>
+                                <option value="wallet-related">Wallet Related</option>
+                                <option value="order-related">Order Related</option>
+                                <option value="delivery-related">Delivery Related</option>
+                                <option value="cod-remenance">COD Remenance</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="second-lineflex-support">
+                        <label for="" class="description">
+                            <span class="description-txt" id="common-padding-tls">
+                                Description
+                            </span>
+                            <textarea name="" id="desc-area" required></textarea>
+                        </label>
+                    </div>
+                    <input type="file" name="" id="" accept=".jpg, .jpeg, .png">
+                    <div class="btn-raisemyquery">
+                        <button class="cancel-raisemyquery" onclick="cancelQuery()">Cancel Raising</button>
+                        <button class="resolve-my-query" onclick="submitQuery()">Resolve My Query</button>
+
+                    </div>
+                </div>
+                <div class="table-containcover-ticket">
+                    <table>
+                        <thead class="table-ticket-thead">
+                            <tr class="thtr-ticket">
+                                <th>Subject</th>
+                                <th>Submit Date</th>
+                                <th>Ticket</th>
+                                <th>Status</th>
+                                <th>Response</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-ticket-tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="editprofiletab cm-bodymain-hide hide">
+                <p class="tab-heading">Personal Details</p>
+                <p class="tab-head--subtitle">Don't forget to save your changes</p>
+                <hr style="    background-color: var(--secondary-text-color);
+                height: .7px;
+                border: none;">
+                <div class="editprofile-divpart">
+                    <div class="profilef--edit">
+                        <label for="profilef--edit--f" id="label-id--style">
+                            Name
+                        </label>
+                        <div class="profilef--edit-f--div">
+                            <input type="text" class="profilef--edit--f firstname--edit input-style-cs-ff-1"
+                                placeholder="Enter the Detail" value="" autocomplete="new-name">
+                            <input type="text" class="profilef--edit--f lastname--edit input-style-cs-ff-1"
+                                placeholder="Enter the Detail" value autocomplete="new-name">
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="profilef--edit">
+                        <label for="profilef--edit--f" id="label-id--style">
+                            Email ID
+                        </label>
+                        <div class="profilef--edit-f--div">
+                            <input type="text" class="profilef--edit--f email--edit input-style-cs-ff"
+                                placeholder="Enter Email Address" value>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="profilef--edit">
+                        <label for="profilef--edit--f" id="label-id--style">
+                            Phone Number
+                        </label>
+                        <div class="profilef--edit-f--div">
+                            <input type="text" class="profilef--edit--f phonenumber--edit input-style-cs-ff"
+                                placeholder="Enter Phone Number" value>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="profilef--edit">
+                        <label for="profilef--edit--f" id="label-id--style" style="align-self: flex-start;">
+                            Password
+                        </label>
+                        <div class="profile-container--f-div">
+                            <div class="profilef--edit-f--div">
+                                <form action="" class="profilef--edit-f--div">
+                                    <input type="password"
+                                        class="profilef--edit--f myPassword--fs16 input-style-cs-ff-1"
+                                        id="current_password" placeholder="Enter Current Password" value
+                                        autocomplete="new-password">
+                                    <input type="password"
+                                        class="profilef--edit--f myPassword--fs16 input-style-cs-ff-1"
+                                        placeholder="Enter New Password" id="newpass" value autocomplete="new-password">
+                                    <input type="password"
+                                        class="profilef--edit--f myPassword--fs16 input-style-cs-ff-1"
+                                        placeholder="Confirm Password" id="con_newpass" value
+                                        autocomplete="new-password">
+                                </form>
+                            </div>
+                            <label for="showpassword--f" class="showpassword-style">
+                                <input type="checkbox" onclick="showPassword()" id="showpassword--f">Show Password
+
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="addresses--edit">
+                        <div class="addressf--edit--f">
+                            Addresses
+                            <button class="addnew-address" onclick="addnewAddress()">Add New</button>
+                        </div>
+                        <div class="addresses-container--edit-f">
+
+
+                        </div>
+                    </div>
+                    <div class="submitorcancel--edit-profile">
+                        <button class="cm-submitor--editprofile cancel--submitor">
+                            Cancel
+                        </button>
+                        <button class="cm-submitor--editprofile submit-submitor" onclick="submitChanges()">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -356,8 +576,10 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
     <script src="index.js"></script>
+    <script src="profile.js"></script>
     <script src="product-designer.js"></script>
     <script src="design-library.js"></script>
+    <script src="ticket.js"></script>
 </body>
 
 

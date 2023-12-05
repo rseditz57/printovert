@@ -1,0 +1,112 @@
+[
+    {
+        "username": "ronit_dev",
+        "fullname": "Ronit Sarkar",
+        "firstname": "Ronit",
+        "lastname": "Sarkar",
+        "email_f": "rseditz57@gmail.com",
+        "phonenumber": "7439398783",
+        "password_f": "rseditz@222",
+        "profilephoto": ""
+    },
+    {
+        "username": "aisha_21",
+        "fullname": "Aisha Patel",
+        "firstname": "Aisha",
+        "lastname": "Patel",
+        "email_f": "aisha.pat@example.com",
+        "phonenumber": "9876543210",
+        "password_f": "aisha@123",
+        "profilephoto": ""
+    },
+    {
+        "username": "carlos_r",
+        "fullname": "Carlos Rodriguez",
+        "firstname": "Carlos",
+        "lastname": "Rodriguez",
+        "email_f": "carlos.r@example.com",
+        "phonenumber": "5551234567",
+        "password_f": "carlos@pass",
+        "profilephoto": ""
+    },
+    {
+        "username": "sophie_j",
+        "fullname": "Sophie Johnson",
+        "firstname": "Sophie",
+        "lastname": "Johnson",
+        "email_f": "sophie.j@example.com",
+        "phonenumber": "1237894560",
+        "password_f": "sophie#789",
+        "profilephoto": ""
+    },
+    {
+        "username": "ravi_kumar",
+        "fullname": "Ravi Kumar",
+        "firstname": "Ravi",
+        "lastname": "Kumar",
+        "email_f": "ravi.k@example.com",
+        "phonenumber": "9998887770",
+        "password_f": "ravi@4321",
+        "profilephoto": ""
+    },
+    {
+        "username": "elena_g",
+        "fullname": "Elena Garcia",
+        "firstname": "Elena",
+        "lastname": "Garcia",
+        "email_f": "elena.g@example.com",
+        "phonenumber": "6543210987",
+        "password_f": "elena@pass",
+        "profilephoto": ""
+    },
+    {
+        "username": "hiroshi_t",
+        "fullname": "Hiroshi Tanaka",
+        "firstname": "Hiroshi",
+        "lastname": "Tanaka",
+        "email_f": "hiroshi.t@example.com",
+        "phonenumber": "9870123456",
+        "password_f": "hiroshi@789",
+        "profilephoto": ""
+    },
+    {
+        "username": "laura_w",
+        "fullname": "Laura White",
+        "firstname": "Laura",
+        "lastname": "White",
+        "email_f": "laura.w@example.com",
+        "phonenumber": "7890123456",
+        "password_f": "laura@pass",
+        "profilephoto": ""
+    },
+    {
+        "username": "raul_m",
+        "fullname": "Raul Martinez",
+        "firstname": "Raul",
+        "lastname": "Martinez",
+        "email_f": "raul.m@example.com",
+        "phonenumber": "4567890123",
+        "password_f": "raul@pass",
+        "profilephoto": ""
+    },
+    {
+        "username": "zara_k",
+        "fullname": "Zara Khan",
+        "firstname": "Zara",
+        "lastname": "Khan",
+        "email_f": "zara.k@example.com",
+        "phonenumber": "8765432109",
+        "password_f": "zara@pass",
+        "profilephoto": ""
+    },
+    {
+        "username": "javier_s",
+        "fullname": "Javier Sanchez",
+        "firstname": "Javier",
+        "lastname": "Sanchez",
+        "email_f": "javier.s@example.com",
+        "phonenumber": "3210987654",
+        "password_f": "javier@pass",
+        "profilephoto": ""
+    }
+]

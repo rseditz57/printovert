@@ -119,10 +119,18 @@
     background-color: var(--third-color);
     border-radius: 30px;
     padding: 10px;
+    cursor: pointer;
 }
 
 .product-wrap-container:hover {
     box-shadow: 0 0 20px var(--secondary-text-color);
+}
+
+.design-area-imageupload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 .productimage-pwc {
@@ -297,6 +305,22 @@
     border: none;
     border-radius: 20px;
     margin-bottom: 20px;
+}
+
+.designlibrary-areaupload {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 25px;
+    font-weight: 500;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
 }
 
 .pricing {

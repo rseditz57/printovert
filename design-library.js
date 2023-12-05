@@ -1,5 +1,18 @@
-const libraryArr = [
-];
+let libraryArr = [];
+
+fetch('library.json')
+    .then(response =>
+        response.json()
+    )
+    .then(data => {
+        // Store the fetched data in the productData array
+        libraryArr = data;
+
+        // Call the generateHtml function after the data has been loaded
+        libraryCreate();
+    })
+    .catch(error => console.error('Error fetching data:', error));
+
 
 function libraryCreate() {
     const library = document.querySelector('.image-designlibrary-container');
@@ -28,8 +41,8 @@ function getImageUrl() {
         titleHere = prompt("Set a Image Title:");
         reader.onload = function (e) {
             // Add the new image to the libraryArr
-            if (titleHere !== null) {
-                libraryArr.push({
+            if (titleHere !== null && titleHere != "") {
+                libraryArr.unshift({
                     image: e.target.result,
                     title: titleHere, // You can set a default title or leave it empty
                 });
@@ -53,7 +66,7 @@ function getImageUrl() {
 }
 
 // Initial library creation
-libraryCreate();
+// libraryCreate();
 
 function uploadToggle() {
     document.querySelector('.uploadDiving').classList.toggle('hide')
