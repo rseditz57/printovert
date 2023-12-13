@@ -126,7 +126,7 @@
 thead {
     /* background-color: rgba(128, 128, 128, 0.326); */
     /* border-radius: 15px; */
-    background-color: var(--third-text-color);
+    background-color: var(--primary-color);
     color: white;
 }
 
@@ -179,7 +179,7 @@ table {
     border-radius: 15px;
 }
 
-.tdtr-ticket td:nth-child(1) {
+#first-tdthh {
     max-width: 350px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -192,6 +192,8 @@ table {
     border: none;
     color: var(--third-color);
     border-radius: 10px;
+    text-transform: capitalize;
+
 }
 
 .responded-table {
@@ -200,6 +202,7 @@ table {
     border: none;
     color: var(--third-color);
     border-radius: 10px;
+    text-transform: capitalize;
 }
 
 .deleteticketArr {

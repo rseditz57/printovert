@@ -1,24 +1,9 @@
-let ticketArr = []
-
 let subject = "";
 let callback_num = "";
 let query_for = "";
 let description = "";
 let file_url = "";
 let submitdate = ""
-// Fetch data from the JSON file
-fetch('ticket-data.json')
-    .then(response =>
-        response.json()
-    )
-    .then(data => {
-        // Store the fetched data in the productData array
-        ticketArr = data;
-
-        // Call the generateHtml function after the data has been loaded
-        generateTable();
-    })
-    .catch(error => console.error('Error fetching data:', error));
 
 
 function cancelQuery() {
@@ -91,15 +76,15 @@ function raiseToggle() {
 }
 
 function generateTable() {
-    const x = document.querySelector('.table-ticket-tbody')
+    const x = document.querySelector('#table--ticket')
     let innerhtml = "";
     for (let i = 0; i < ticketArr.length; i++) {
         innerhtml += `
             <tr class="tdtr-ticket">
-                <td>${ticketArr[i].subject}</td>
+                <td id="first-tdthh">${ticketArr[i].subject}</td>
                 <td>${ticketArr[i].submitdate}</td>
                 <td><a href="${ticketArr[i].ticket}">view</a></td>
-                <td><button class="${ticketArr[i].status == 'Pending' ? 'pending-table' : 'responded-table'}">${ticketArr[i].status}</td>
+                <td><button class="${ticketArr[i].status == 'Pending' ? 'pending-table' : 'responded-table'}">${ticketArr[i].status}</button></td>
                 <td>${ticketArr[i].response === 'N/A' ? 'N/A' : `<a href="${ticketArr[i].response_url}" target="_blank">view</a>`}</td>
                 <td><button class="deleteticketArr" onclick="deleteTicket(${i})">Delete</button></td>
             </tr>
@@ -109,6 +94,7 @@ function generateTable() {
     if (ticketArr.length == 0) {
         x.innerHTML = "KOI QUERY NHI BACHI BHAI, SARE SOLVE KARDIYA APKE BHAI NE"
     }
+    console.log(ticketArr);
 }
 
 function deleteTicket(index) {

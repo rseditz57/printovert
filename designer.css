@@ -396,7 +396,7 @@
 .colorswatch-fs14.activeColor {
     border: 2px solid var(--text-color);
     padding: 5px;
-    box-shadow: 0px 0px 5px var(--primary-color);
+    /* box-shadow: 0px 0px 5px var(--primary-color); */
 }
 
 .sizecollection-fs14 {

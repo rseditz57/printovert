@@ -1,0 +1,126 @@
+@font-face {
+    font-family: inter;
+    src: url(font/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+table {
+    font-family: Poppins;
+}
+
+:root {
+    --text-primary: #0A1B39;
+    --primary-color: #0046ff;
+    --secondary-color: #E0F4FF;
+    --third-color: #fff;
+    --text-color: #222222;
+    --secondary-text-color: #6e6d7a;
+    --success-color: #4daa57;
+    --reject-color: #ff0000;
+    --third-text-color: #83A2FF
+}
+
+.table-ticket-thead {
+    width: 100%;
+}
+
+.table-containcover-ticket {
+    width: 100%;
+    overflow: auto;
+    overflow: overlay;
+    border-radius: 15px;
+    /* background-color: #fffb; */
+}
+
+thead {
+    /* background-color: rgba(128, 128, 128, 0.326); */
+    /* border-radius: 15px; */
+    background-color: var(--primary-color);
+    color: white;
+}
+
+table {
+    width: 100%;
+    font-weight: 500;
+    background-color: #fff9;
+    padding: 10px 5px;
+    border-radius: 15px;
+}
+
+.thtr-ticket th {
+    font-weight: 500;
+    position: sticky;
+}
+
+.tdtr-ticket td {
+    font-weight: 500;
+    /* position: sticky; */
+    text-align: center;
+}
+
+.table-ticket-tbody tr:nth-of-type(even) {
+    background-color: var(--secondary-color);
+    border-collapse: collapse;
+    /* Adjust the alpha (opacity) value as needed */
+
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+.table-ticket-tbody tr {
+    border-collapse: collapse;
+}
+
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 1rem .5rem;
+    /* text-align: left; */
+    /* border-radius: 15px; */
+}
+
+table {
+    border-radius: 15px;
+}
+
+#first-tdthh {
+    max-width: 350px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.pending-table {
+    background-color: var(--pending);
+    padding: 5px 10px;
+    border: none;
+    color: var(--third-color);
+    border-radius: 10px;
+    text-transform: capitalize;
+
+}
+
+.responded-table {
+    background-color: var(--success-color);
+    padding: 5px 10px;
+    border: none;
+    color: var(--third-color);
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+.deleteticketArr {
+    padding: 5px 10px;
+    background-color: var(--reject-color);
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.raiseaticket {
+    margin-bottom: 50px;
+}

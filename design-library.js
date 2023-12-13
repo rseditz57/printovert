@@ -1,18 +1,3 @@
-let libraryArr = [];
-
-fetch('library.json')
-    .then(response =>
-        response.json()
-    )
-    .then(data => {
-        // Store the fetched data in the productData array
-        libraryArr = data;
-
-        // Call the generateHtml function after the data has been loaded
-        libraryCreate();
-    })
-    .catch(error => console.error('Error fetching data:', error));
-
 
 function libraryCreate() {
     const library = document.querySelector('.image-designlibrary-container');
@@ -30,6 +15,7 @@ function libraryCreate() {
         `;
     }
     library.innerHTML = innerhtml;
+    console.log(libraryArr);
 }
 
 function getImageUrl() {
@@ -46,6 +32,8 @@ function getImageUrl() {
                     image: e.target.result,
                     title: titleHere, // You can set a default title or leave it empty
                 });
+                let imgpp = e.target.result
+                console.log(reader);
             } else {
                 return alert('Please Try Again and Input the Title')
             }
@@ -55,7 +43,7 @@ function getImageUrl() {
             libraryCreate();
 
             // Log the updated libraryArr to the console
-            console.log(libraryArr);
+            // console.log(libraryArr);
         };
 
         // Read the data URL of the selected file

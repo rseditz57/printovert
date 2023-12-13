@@ -123,25 +123,25 @@
             </ul>
         </div>
         <div class="body-main">
-            <div class="dashboard cm-bodymain-hide">
+            <div class="dashboard cm-bodymain-hide hide">
                 <p class="tab-heading">Welcome Back , User</p>
                 <p class="tab-head--subtitle">Lets have a tour to the dashboard</p>
                 <div class="dashboard-grid-system-top-view--fs">
                     <div class="dashboard-grid-fs--child">
                         <p class="fs-dashboard--top-grid-title">Spent </p>
-                        <p class="fs-dashboard--top-grid-data">$3780</p>
+                        <p class="fs-dashboard--top-grid-data" id="spent-758"></p>
                     </div>
                     <div class="dashboard-grid-fs--child">
                         <p class="fs-dashboard--top-grid-title">Total Orders</p>
-                        <p class="fs-dashboard--top-grid-data">101</p>
+                        <p class="fs-dashboard--top-grid-data" id="totalorders-566"></p>
                     </div>
                     <div class="dashboard-grid-fs--child">
                         <p class="fs-dashboard--top-grid-title">Wallet Balance</p>
-                        <p class="fs-dashboard--top-grid-data">$200</p>
+                        <p class="fs-dashboard--top-grid-data" id="walletbalance--f-gst536"></p>
                     </div>
                     <div class="dashboard-grid-fs--child">
                         <p class="fs-dashboard--top-grid-title">Active Orders</p>
-                        <p class="fs-dashboard--top-grid-data">20</p>
+                        <p class="fs-dashboard--top-grid-data" id="activeorders"></p>
                     </div>
 
 
@@ -153,8 +153,8 @@
                                 <p class="texttop--div--1---a">
                                     Wallet Balance
                                 </p>
-                                <p class="texttop--div--2---a">
-                                    $1,200
+                                <p class="texttop--div--2---a" id="texttp-walletbalance">
+
                                 </p>
                                 <div class="btn-div-aa-56442">
                                     <button class="add-fund--dashboard--a cm-btn-60-40-2">View History</button>
@@ -361,20 +361,60 @@
                     <!-- FETCHING THROUGH DESIGN-LIBRARY.JS  -->
                 </div>
             </div>
-            <div class="orderstab cm-bodymain-hide hide">
+            <div class="orderstab cm-bodymain-hide ">
+                <p class="tab-heading">All Orders</p>
+                <p class="tab-head--subtitle">Check your Orders</p>
+                <div class="table-containcover-ticket">
+                    <table>
+                        <thead class="table-ticket-thead">
+                            <tr class="thtr-ticket">
+                                <th>QTY</th>
+                                <th>Order Date</th>
+                                <th>Product Detail</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Tracking Id</th>
+                                <th>Delivery Company</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-ticket-tbody" id="table--orders">
 
+                        </tbody>
+                    </table>
+                </div>
             </div>
             <div class="createorder-new cm-bodymain-hide hide"></div>
             <div class="wallettab cm-bodymain-hide hide">
                 <div class="wallettop">
                     <div class="walettop-left">
-                        <p class="tab-heading">Personal Details</p>
-                        <p class="tab-head--subtitle">Don't forget to save your changes</p>
+                        <p class="tab-heading">Wallet</p>
+                        <p class="tab-head--subtitle">Check your Wallet</p>
                     </div>
-                    <button class="addbalance">
+                    <button class="addbalance" onclick="addbalance_pop()">
                         Add Balance
                     </button>
                 </div>
+                <div class="wllt-add-cntainer hide">
+                    <div class="wllet-add">
+                        <h1 style="margin-bottom: 0px;">Scan & Pay</h1>
+                        <p style="color: var(--secondary-text-color); font-size: .9rem; margin-bottom: 10px;">Enter your
+                            amound and Submit
+                            the Screenshot</p>
+                        <img style="border-radius: 20px; margin-bottom: 20px;" src="images/IMG_62577736-1-450x565.jpg"
+                            alt="" class="scanner-tag-mmehul-enterprise">
+                        <input type="number" class="payment-amount" placeholder="Enter Amount">
+                        <input type="file" class="payment-of">
+                        <div class="btn-col-payment">
+                            <button class="cancel-payment">
+                                Cancel
+                            </button>
+                            <button class="confirm-payment">
+                                Confirm
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="wallet-details">
                     <div class="wallet-child">
                         <div class="wallet-child-first">
@@ -385,8 +425,8 @@
                                 Total Wallet Balance Available:
                             </div>
                         </div>
-                        <div class="walletbalance--f">
-                            $20,000
+                        <div class="walletbalance--f" id="wallet-balance--f99">
+
                         </div>
                     </div>
                     <div class="wallet-child">
@@ -398,7 +438,7 @@
                                 Total Spent Amount Available:
                             </div>
                         </div>
-                        <div class="walletbalance--f">
+                        <div class="walletbalance--f" id="wallet-balance-spent">
                             $2,000
                         </div>
                     </div>
@@ -415,6 +455,23 @@
                             $9,502
                         </div>
                     </div>
+                </div>
+                <div class="table-containcover-ticket">
+                    <table>
+                        <thead class="table-ticket-thead">
+                            <tr class="thtr-ticket">
+                                <th>Sl.No</th>
+                                <th>Transaction Date</th>
+                                <th>Time</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Response</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-ticket-tbody" id="table--wallet">
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="tickettab cm-bodymain-hide hide">
@@ -475,7 +532,7 @@
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        <tbody class="table-ticket-tbody">
+                        <tbody class="table-ticket-tbody" id="table--ticket">
 
                         </tbody>
                     </table>
@@ -580,6 +637,8 @@
     <script src="product-designer.js"></script>
     <script src="design-library.js"></script>
     <script src="ticket.js"></script>
+    <script src="wallet.js"></script>
+    <script src="order.js"></script>
 </body>
 
 

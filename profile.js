@@ -1,10 +1,15 @@
 let profile_data = [];
-let addressdataArr = null;
-
+let addressdataArr = [];
+let transactions_history = []
+let ticketArr = []
+let libraryArr = [];
+let activeOrders = []
+let orders = [];
+let spent = 0;
 const country_code = "+91 ";
 
 // getting the username now statically
-let username = "";
+let username = "ronit_dev";
 // let fullname = `${firstname + " " + lastname}`
 let arrayId = "";
 let firstname = "";
@@ -20,6 +25,8 @@ let pincode = "";
 let receiver_name = "";
 let additional_no = "";
 let landmark = "";
+let wallet_balance = ""
+
 
 function getUsername() {
     const usernamePro = prompt('Enter Username');
@@ -68,28 +75,21 @@ fetch('profile.json')
     .then(data => {
         // Store the fetched data in the productData array
         profile_data = data;
-    })
-    .catch(error => console.error('Error fetching profile details:', error));
-
-fetch('address.json')
-    .then(response =>
-        response.json()
-    )
-    .then(y => {
-        // Store the fetched data in the productData array
-        addressdataArr = y;
-
-
-        // Call the generateHtml function after the data has been loaded
-        generateAddress();
-        functionToRun();
-        getUsername();
+        // generateAddress();
         getArrayProfile();
         setValues()
-        document.querySelector('#username-text--menu').innerText = `${firstname + " " + lastname}`;
+        generateAddress()
+        functionToRun();
+        // getUsername();
+        generateTable();
         setInputValue();
+        generateWallet();
+        calculateValueSpent();
+        libraryCreate();
+        setInnertexts();
+        generateTableOrder();
     })
-    .catch(error => console.error('Error fetching address:', error));
+    .catch(error => console.error('Error fetching profile details:', error));
 
 function showPassword() {
     var x = document.querySelectorAll(".myPassword--fs16");
@@ -254,6 +254,13 @@ function setValues() {
     email_f = `${profile_data[arrayId].email_f}`;
     phonenumber = `${profile_data[arrayId].phonenumber}`;
     password_f = `${profile_data[arrayId].password_f}`;
+    transactions_history = profile_data[arrayId].transactions;
+    wallet_balance = profile_data[arrayId].wallet_balance
+    ticketArr = profile_data[arrayId].tickets;
+    libraryArr = profile_data[arrayId].design_library;
+    activeOrders = profile_data[arrayId].activeOrders;
+    orders = profile_data[arrayId].orders
+    addressdataArr = profile_data[arrayId].address
 }
 function setInputValue() {
     setValues()
@@ -268,3 +275,20 @@ function setInputValue() {
     phone_edit.value = `${country_code}` + phonenumber
 }
 
+
+function calculateValueSpent() {
+    for (let i = 0; i < orders.length; i++) {
+        spent += orders[i].price * orders[i].quantity;
+    }
+}
+
+function setInnertexts() {
+    document.querySelector('#username-text--menu').innerText = `${firstname + " " + lastname}`;
+    document.querySelector('#wallet-balance--f99').innerText = `${'₹' + wallet_balance}`;
+    document.querySelector('#walletbalance--f-gst536').innerText = `${'₹' + wallet_balance}`;
+    document.querySelector('#activeorders').innerText = `${activeOrders.length}`
+    document.querySelector('#totalorders-566').innerText = `${orders.length}`
+    document.querySelector('#spent-758').innerText = `${'₹' + spent}`
+    document.querySelector('#texttp-walletbalance').innerText = `${'₹' + wallet_balance}`
+    document.querySelector('#wallet-balance-spent').innerText = `${'₹' + spent}`
+}
